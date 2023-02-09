@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.57.1"
+  },
+  "name": "tp-sass-1",
+  "version": "1.0.0",
+  "description": "tp-sass-montagne",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "Anthony MAURICE",
+  "license": "ISC"
+}
