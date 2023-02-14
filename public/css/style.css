@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: "Merriweather", serif;
+  color: white;
 }
 
 h1 {
@@ -105,9 +106,9 @@ header, #main {
 
 body {
   width: 100%;
-  color: white;
 }
 
+/* animation on load et main properties */
 #blank-load {
   height: 2000px;
   background-color: white;
@@ -341,6 +342,13 @@ footer .contact-info .info .value p {
 
 /* media querries */
 @media screen and (max-width: 1280px) {
+  /* Tablettes format paysage */
+  nav {
+    justify-content: center;
+  }
+  nav .nav-links {
+    display: none;
+  }
   footer .formulaire {
     padding: 25px 15px 0 15px;
   }
@@ -354,8 +362,8 @@ footer .contact-info .info .value p {
     margin: 10px;
   }
 }
-/* mobile */
 @media screen and (max-width: 850px) {
+  /* tablettes format portrait et mobiles format paysage */
   /* header */
   .slogan-container {
     height: 1000px;
@@ -368,7 +376,6 @@ footer .contact-info .info .value p {
   }
   nav {
     padding: 0;
-    justify-content: center;
   }
   nav .nav-elements {
     display: flex;
@@ -378,9 +385,6 @@ footer .contact-info .info .value p {
     font-size: 10px;
     padding: 20px;
     text-align: center;
-  }
-  nav .nav-links {
-    display: none;
   }
   /* main */
   #main .article .first-date {
@@ -440,6 +444,7 @@ footer .contact-info .info .value p {
   }
 }
 @media screen and (max-width: 450px) {
+  /* Mobiles format portrait */
   #main .article .content h1 {
     width: 65%;
     font-size: 20px;

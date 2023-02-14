@@ -7,8 +7,9 @@
 
 body{
     width: 100%;
-    color: $color-primary;
 }
+
+/* animation on load et main properties */
 
 #blank-load{
     height: 2000px;
@@ -256,6 +257,13 @@ footer{
 
 @media screen and (max-width: 1280px){
 
+    /* Tablettes format paysage */
+    nav{
+        justify-content: center;
+        .nav-links{
+            display: none;
+        }
+    }
 
     footer{
         .formulaire{
@@ -277,9 +285,8 @@ footer{
     }
 }
 
-/* mobile */
-
 @media screen and (max-width: 850px){
+    /* tablettes format portrait et mobiles format paysage */
     /* header */
     .slogan-container{
         height: 1000px;
@@ -292,7 +299,6 @@ footer{
     }
     nav{
         padding: 0;
-        justify-content: center;
         .nav-elements{
             display: flex;
             padding: 0;
@@ -302,15 +308,11 @@ footer{
                 text-align: center;
             }
         }
-        .nav-links{
-            display: none;
-        }
     }
 
     /* main */
     #main{
         .article{
-            
             .first-date{
                 font-size: 10px;
             }
@@ -377,9 +379,9 @@ footer{
 }
 
 @media screen and (max-width: 450px){
+    /* Mobiles format portrait */
     #main{
         .article{
-
             .content{
                 h1{
                     width: 65%;
