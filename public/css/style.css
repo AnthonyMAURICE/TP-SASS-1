@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: "Merriweather", serif;
+  color: white;
 }
 
 h1 {
@@ -105,9 +106,9 @@ header, #main {
 
 body {
   width: 100%;
-  color: white;
 }
 
+/* animation on load et main properties */
 #blank-load {
   height: 2000px;
   background-color: white;
