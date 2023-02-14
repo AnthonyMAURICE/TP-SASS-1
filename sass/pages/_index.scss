@@ -256,6 +256,12 @@ footer{
 
 @media screen and (max-width: 1280px){
 
+    nav{
+        justify-content: center;
+        .nav-links{
+            display: none;
+        }
+    }
 
     footer{
         .formulaire{
@@ -292,7 +298,6 @@ footer{
     }
     nav{
         padding: 0;
-        justify-content: center;
         .nav-elements{
             display: flex;
             padding: 0;
@@ -301,9 +306,6 @@ footer{
                 padding: 20px;
                 text-align: center;
             }
-        }
-        .nav-links{
-            display: none;
         }
     }
 
