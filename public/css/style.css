@@ -342,6 +342,7 @@ footer .contact-info .info .value p {
 
 /* media querries */
 @media screen and (max-width: 1280px) {
+  /* Tablettes format paysage */
   nav {
     justify-content: center;
   }
@@ -361,8 +362,8 @@ footer .contact-info .info .value p {
     margin: 10px;
   }
 }
-/* mobile */
 @media screen and (max-width: 850px) {
+  /* tablettes format portrait et mobiles format paysage */
   /* header */
   .slogan-container {
     height: 1000px;
@@ -443,6 +444,7 @@ footer .contact-info .info .value p {
   }
 }
 @media screen and (max-width: 450px) {
+  /* Mobiles format portrait */
   #main .article .content h1 {
     width: 65%;
     font-size: 20px;
