@@ -6,7 +6,7 @@ body {
 
 h1 {
   font-family: "Inter", sans-serif;
-  width: 45%;
+  width: 50%;
   font-size: 100px;
   margin-bottom: 50px;
   font-weight: 800;
@@ -21,6 +21,11 @@ h1 {
 
 p {
   line-height: 2.5;
+}
+
+.under-slogan {
+  font-family: "Merriweather", serif;
+  font-size: 25px;
 }
 
 form p {
@@ -124,12 +129,13 @@ body {
 }
 
 /* animation on load et main properties */
-#blank-load {
-  background-color: white;
-  /*height: 2000px;
-  animation: load-fade 3s forwards;*/
+/*
+#blank-load{
+    background-color: white;
+    height: 2000px;
+    animation: load-fade 3s forwards;
 }
-
+*/
 #main-page {
   position: relative;
   bottom: 200px;
@@ -161,17 +167,15 @@ body {
   border: 1px solid white;
   border-radius: 50%;
 }
-.arrow a {
+.arrow i {
   padding: 20px;
+  color: white;
 }
 .arrow:hover {
   border-color: black;
 }
-.arrow:hover > a > .fa-solid {
+.arrow:hover:hover > i {
   color: black;
-}
-.arrow i {
-  color: white;
 }
 
 nav {
@@ -248,8 +252,8 @@ nav .nav-links a:hover {
   font-size: 30px;
 }
 #main .article .content p {
-  width: 45%;
-  font-size: 20px;
+  width: 50%;
+  font-size: 22px;
   font-style: italic;
   text-align: center;
 }
@@ -264,11 +268,11 @@ nav .nav-links a:hover {
 }
 #main .double-articles .article .content p {
   font-style: normal;
-  width: 75%;
+  width: 74%;
   height: 200px;
-  font-size: 17px;
-  text-align: justify;
+  font-size: 20px;
   margin-top: 50px;
+  text-align: left;
 }
 
 /* formulaire contact */
