@@ -13,7 +13,8 @@ body{
 
 #blank-load{
     background-color: white;
-    animation: load-fade 3s forwards;
+    /*height: 2000px;
+    animation: load-fade 3s forwards;*/
 }
 
 #main-page{
@@ -127,14 +128,15 @@ nav{
             display: flex;
             flex-flow: column;
             align-items: center;
-            h1{
+            width: 100%;
+            .second-section-title{
                 text-align: center;
-                width: 60%;
+                width: 41%;
                 margin-top: 25px;
-                font-size: 90px;
+                font-size: 30px;
             }
             p{
-                width: 55%;
+                width: 45%;
                 font-size: 20px;
                 font-style: italic;
                 text-align: center;
@@ -150,10 +152,6 @@ nav{
             height: 1100px;
             border: 1px solid $color-tertiary-moded;
             .content{
-                h1{
-                    font-size: 40px;
-                    width: 60%;
-                }
                 p{
                     font-style: normal;
                     width: 75%;

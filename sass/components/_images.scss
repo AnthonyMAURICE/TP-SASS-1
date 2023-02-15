@@ -3,13 +3,24 @@ header, #main{
     background-position-x: center;
 }
 
-.article-images{
-    height: 100%;
-    width: 75%;
+.images{
     margin-top: 85px;
+    img{
+        max-width: 1152px;
+        height: auto;
+        width: 100%;
+        aspect-ratio: auto 1920 / 1238;
+    }
 }
 
-.double-article-images{
+.images-double{
     margin-top: 0;
+    img{
+        aspect-ratio: auto 640 / 427;
+        width: 100%;
+        height: auto;
+        max-width: 575px;
+    }
+    
 }
 

@@ -6,10 +6,10 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=5">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">        
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+        <link rel="preloaded" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">        
+        <link rel="preloaded" href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./public/css/style.css">
-        <script src="https://kit.fontawesome.com/4486705caa.js" crossorigin="anonymous"></script> 
+        <script src="https://kit.fontawesome.com/4486705caa.js" crossorigin="anonymous" async></script> 
         <title>La montagne ça vous gagne !</title>
     </head>
     <body>
@@ -53,9 +53,11 @@
                         <span class="line"></span>
                     </div>
                     <div class="content">
-                        <h1>AND THIS IS A MASSIVE HEADLINE</h1>
+                        <h1 class="section-title">AND THIS IS A MASSIVE HEADLINE</h1>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil debitis quisquam, ipsa voluptate amet voluptatum dolores numquam impedit illo sequi asperiores deleniti beatae ? Illum, voluptatibus ?</p>
-                        <img class="article-images" src="./images/pic01.webp" alt="randonnée trekking">
+                        <div class="images">    
+                            <img class="article-images" src="./images/pic01.webp" alt="randonnée trekking">
+                        </div>
                         <button class="full-story">FULL STORY</button>
                     </div>
                 <div class="double-articles">
@@ -64,9 +66,10 @@
                             April 24, 2017
                         </p>
                         <div class="content">
-                            <h1>SED MAGNA IPSUM FAUCIBUS</h1>
-                            
-                            <img class="article-images double-article-images" src="./images/pic02.webp" alt="randonnée trekking">
+                            <h1 class="second-section-title">SED MAGNA IPSUM FAUCIBUS</h1>
+                            <div class="images-double">
+                                <img class="article-images double-article-images" src="./images/pic02.webp" alt="randonnée trekking">
+                            </div>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nihil fuga quia voluptae laudantium dignissimos incidunt praesentium ipsam officiis laborum.</p>
                             <button class="full-story">FULL STORY</button>
                         </div>
@@ -76,9 +79,10 @@
                             April 22, 2017
                         </p>
                         <div class="content">
-                            <h1>PRIMIS EGET IMPERDIET LOREM</h1>
-                            
-                            <img class="article-images double-article-images" src="./images/pic03.webp" alt="randonnée trekking">
+                            <h1 class="second-section-title">PRIMIS EGET IMPERDIET LOREM</h1>
+                            <div class="images-double">
+                                <img class="article-images double-article-images" src="./images/pic03.webp" alt="randonnée trekking">
+                            </div>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nihil fuga quia voluptae laudantium dignissimos incidunt praesentium ipsam officiis laborum.</p>
                             <button class="full-story">FULL STORY</button>
                         </div>

@@ -12,6 +12,13 @@ h1 {
   font-weight: 800;
 }
 
+.section-title {
+  font-size: 90px;
+  text-align: center;
+  width: 70%;
+  margin-top: 75px;
+}
+
 p {
   line-height: 2.5;
 }
@@ -77,24 +84,32 @@ header, #main {
   background-position-x: center;
 }
 
-.article-images {
-  height: 100%;
-  width: 75%;
+.images {
   margin-top: 85px;
 }
+.images img {
+  max-width: 1152px;
+  height: auto;
+  width: 100%;
+  aspect-ratio: auto 1920/1238;
+}
 
-.double-article-images {
+.images-double {
   margin-top: 0;
+}
+.images-double img {
+  aspect-ratio: auto 640/427;
+  width: 100%;
+  height: auto;
+  max-width: 575px;
 }
 
 @keyframes load-fade {
-  0% {
-    height: 2000px;
-    display: block;
+  50% {
+    transform: scaleY(0.5);
   }
   100% {
-    height: 0px;
-    display: none;
+    transform: scaleY(0);
   }
 }
 /* reset CSS */
@@ -111,7 +126,8 @@ body {
 /* animation on load et main properties */
 #blank-load {
   background-color: white;
-  animation: load-fade 3s forwards;
+  /*height: 2000px;
+  animation: load-fade 3s forwards;*/
 }
 
 #main-page {
@@ -223,15 +239,16 @@ nav .nav-links a:hover {
   display: flex;
   flex-flow: column;
   align-items: center;
+  width: 100%;
 }
-#main .article .content h1 {
+#main .article .content .second-section-title {
   text-align: center;
-  width: 60%;
+  width: 41%;
   margin-top: 25px;
-  font-size: 90px;
+  font-size: 30px;
 }
 #main .article .content p {
-  width: 55%;
+  width: 45%;
   font-size: 20px;
   font-style: italic;
   text-align: center;
@@ -244,10 +261,6 @@ nav .nav-links a:hover {
 #main .double-articles .article {
   height: 1100px;
   border: 1px solid rgba(105, 105, 105, 0.3);
-}
-#main .double-articles .article .content h1 {
-  font-size: 40px;
-  width: 60%;
 }
 #main .double-articles .article .content p {
   font-style: normal;
