@@ -111,11 +111,11 @@ header, #main {
 
 @keyframes load-fade {
   0% {
-    height: 100%;
+    height: 2000px;
     visibility: visible;
   }
   100% {
-    height: 0%;
+    height: 0px;
     visibility: hidden;
   }
 }
