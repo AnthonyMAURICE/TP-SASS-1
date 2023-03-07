@@ -110,11 +110,13 @@ header, #main {
 }
 
 @keyframes load-fade {
-  50% {
-    transform: scaleY(0.5);
+  0% {
+    height: 100%;
+    visibility: visible;
   }
   100% {
-    transform: scaleY(0);
+    height: 0%;
+    visibility: hidden;
   }
 }
 /* reset CSS */
@@ -129,13 +131,12 @@ body {
 }
 
 /* animation on load et main properties */
-/*
-#blank-load{
-    background-color: white;
-    height: 2000px;
-    animation: load-fade 3s forwards;
+#blank-load {
+  background-color: white;
+  height: 2000px;
+  animation: load-fade 3s forwards;
 }
-*/
+
 #main-page {
   position: relative;
   bottom: 200px;
