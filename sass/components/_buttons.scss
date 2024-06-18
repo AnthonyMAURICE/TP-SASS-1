@@ -10,6 +10,28 @@ button{
     }
 }
 
+.arrow{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color-primary;
+    border-radius: 50%;
+    i{
+        padding: 20px;
+        color: $color-primary;
+    }
+    &:hover{
+        border-color: black;
+        &:hover > i{
+            color: black;
+        }
+    }
+}
+
 /* tablettes et mobiles */
 
 @media screen and (max-width: 800px){

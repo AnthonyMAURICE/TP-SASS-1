@@ -10,11 +10,11 @@
         <link rel="preloaded" href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./public/css/style.css">
         <script src="https://kit.fontawesome.com/4486705caa.js" crossorigin="anonymous" async></script> 
+        <script src="./js/script.js" defer></script>
         <title>La montagne ça vous gagne !</title>
     </head>
     <body>
-        <div id="blank-load"></div>
-        <div id="main-page">
+        
             <header>
                 <div class="slogan-container">
                     <h1 class="slogan">
@@ -28,11 +28,11 @@
                     </div>
                 </div>
                 <nav class="navbar">
-                    <div class="nav-elements">
-                        <a href="#">THIS IS MASSIVELY</a>
-                        <a href="#">GENERIC PAGE</a>
-                        <a href="#">ELEMENTS REFERENCE</a>
-                    </div>
+                    <ul class="nav-elements">
+                        <li><a href="#">THIS IS MASSIVELY</a></li>
+                        <li><a href="#">GENERIC PAGE</a></li>
+                        <li><a href="#">ELEMENTS REFERENCE</a></li>
+                    </ul>
                     <div class="nav-links">
                         <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
@@ -41,6 +41,7 @@
                     </div>
                 </nav>
             </header>
+        <div id="main-page">
             <main>
                 <section class="article main-article">
                     <div class="first-date">
@@ -60,7 +61,7 @@
                     </div>
                 </section>
                 <section class="article double-articles">
-                    <article class="article">
+                    <article class="second-article">
                         <p class="publication-date">
                             April 24, 2017
                         </p>
@@ -73,7 +74,7 @@
                             <button class="full-story">FULL STORY</button>
                         </div>
                     </article>
-                    <article class="article">
+                    <article class="second-article">
                         <p class="publication-date">
                             April 22, 2017
                         </p>
@@ -91,18 +92,18 @@
             <footer>
                 <div id="contact-form" class="formulaire">
                     <form id="contact">
-                        <p>NAME</p>
-                        <input id="contact-name" type="text" pattern="[A-Za-z]+" name="name" required>
-                        <p>EMAIL</p>
-                        <input id="contact-mail" type="email" name="email" required>
-                        <p>MESSAGE</p>
+                        <label for="contact-name">NAME</label>
+                        <input id="contact-name" class="input-elem" type="text" pattern="[A-Za-z]+" name="name" required>
+                        <label for="contact-main">EMAIL</label>
+                        <input id="contact-mail" class="input-elem" type="email" name="email" required>
+                        <label for=""contact-message>MESSAGE</label>
                         <textarea id="contact-message" class="tex-area" rows="10" cols="50" maxlength="300" spellcheck="true" wrap="soft"></textarea>
                         <div class="submit-button">
-                            <button id="submit-button" formmethod="get" form="contact" class="submit">SEND MESSAGE</button>
+                            <button id="submit-button" class="button-submit" formmethod="get" form="contact" class="submit">SEND MESSAGE</button>
                         </div>
                     </form>
                 </div>
-                <div class="contact-info">
+                <div class="formulaire contact-info">
                     <div class="info">
                         <div class="key">
                             <p>ADDRESS</p>
