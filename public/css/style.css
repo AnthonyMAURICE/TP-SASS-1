@@ -6,7 +6,7 @@ body {
 
 h1 {
   font-family: "Inter", sans-serif;
-  width: 50%;
+  width: 60%;
   font-size: 100px;
   margin-bottom: 50px;
   font-weight: 800;
@@ -84,7 +84,7 @@ button:hover {
     margin: 40px 0;
   }
 }
-header, #main {
+header, main, #main-page {
   background-image: url(../../images/bg.webp);
   background-position-x: center;
 }
@@ -128,6 +128,7 @@ header, #main {
 
 body {
   width: 100%;
+  height: 100vh;
 }
 
 /* animation on load et main properties */
@@ -212,12 +213,10 @@ nav .nav-links a:hover {
 }
 
 /* main content */
-#main {
-  position: absolute;
-  z-index: 9999;
+main {
   width: 100%;
 }
-#main .article {
+main .article {
   display: flex;
   flex-flow: column;
   width: 80%;
@@ -225,49 +224,49 @@ nav .nav-links a:hover {
   background-color: white;
   color: black;
 }
-#main .article .first-date {
+main .article .first-date {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 80px;
   font-size: 20px;
 }
-#main .article .first-date .line {
+main .article .first-date .line {
   width: 25%;
   border: 1px solid rgba(105, 105, 105, 0.3);
 }
-#main .article .publication-date {
+main .article .publication-date {
   padding: 40px 0;
   text-align: center;
 }
-#main .article .content {
+main .article .content {
   display: flex;
   flex-flow: column;
   align-items: center;
   width: 100%;
 }
-#main .article .content .second-section-title {
+main .article .content .second-section-title {
   text-align: center;
   width: 55%;
   margin-top: 25px;
   font-size: 30px;
 }
-#main .article .content p {
+main .article .content p {
   width: 50%;
   font-size: 22px;
   font-style: italic;
   text-align: center;
 }
-#main .double-articles {
+main .double-articles {
   display: flex;
   flex-flow: row;
   margin: auto;
 }
-#main .double-articles .article {
+main .double-articles .article {
   height: 1100px;
   border: 1px solid rgba(105, 105, 105, 0.3);
 }
-#main .double-articles .article .content p {
+main .double-articles .article .content p {
   font-style: normal;
   width: 74%;
   height: 200px;
@@ -404,35 +403,35 @@ footer .contact-info .info .value p {
     text-align: center;
   }
   /* main */
-  #main .article .first-date {
+  main .article .first-date {
     font-size: 10px;
   }
-  #main .article .content {
+  main .article .content {
     border-bottom: 1px solid rgba(105, 105, 105, 0.3);
   }
-  #main .article .content h1 {
+  main .article .content h1 {
     width: 45%;
     font-size: 30px;
   }
-  #main .article .content p {
+  main .article .content p {
     width: 45%;
     text-align: center;
     font-size: 15px;
   }
-  #main .double-articles {
+  main .double-articles {
     flex-flow: column;
   }
-  #main .double-articles .article {
+  main .double-articles .article {
     border: none;
     height: 950px;
   }
-  #main .double-articles .article .content {
+  main .double-articles .article .content {
     border: none;
   }
-  #main .double-articles .article .content h1 {
+  main .double-articles .article .content h1 {
     font-size: 30px;
   }
-  #main .double-articles .article .content p {
+  main .double-articles .article .content p {
     width: 75%;
     text-align: left;
     font-size: 15px;
@@ -462,22 +461,22 @@ footer .contact-info .info .value p {
 }
 @media screen and (max-width: 450px) {
   /* Mobiles format portrait */
-  #main .article .content h1 {
+  main .article .content h1 {
     width: 65%;
     font-size: 20px;
   }
-  #main .article .content p {
+  main .article .content p {
     width: 50%;
     font-size: 10px;
   }
-  #main .double-articles .article {
+  main .double-articles .article {
     height: 800px;
   }
-  #main .double-articles .article .content h1 {
+  main .double-articles .article .content h1 {
     width: 75%;
     font-size: 20px;
   }
-  #main .double-articles .article .content p {
+  main .double-articles .article .content p {
     font-size: 10px;
   }
   footer .formulaire input {

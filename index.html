@@ -41,8 +41,8 @@
                     </div>
                 </nav>
             </header>
-            <div id="main">
-                <div class="article main-article">
+            <main>
+                <section class="article main-article">
                     <div class="first-date">
                         <span class="line"></span>
                         <p>
@@ -58,8 +58,9 @@
                         </div>
                         <button class="full-story">FULL STORY</button>
                     </div>
-                <div class="double-articles">
-                    <div class="article">
+                </section>
+                <section class="article double-articles">
+                    <article class="article">
                         <p class="publication-date">
                             April 24, 2017
                         </p>
@@ -71,8 +72,8 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nihil fuga quia voluptae laudantium dignissimos incidunt praesentium ipsam officiis laborum.</p>
                             <button class="full-story">FULL STORY</button>
                         </div>
-                    </div>
-                    <div class="article">
+                    </article>
+                    <article class="article">
                         <p class="publication-date">
                             April 22, 2017
                         </p>
@@ -84,12 +85,12 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nihil fuga quia voluptae laudantium dignissimos incidunt praesentium ipsam officiis laborum.</p>
                             <button class="full-story">FULL STORY</button>
                         </div>
-                    </div>
-                </div>
-            </div>    
+                    </article>
+                </section>
+            </main>    
             <footer>
                 <div id="contact-form" class="formulaire">
-                    <form>
+                    <form id="contact">
                         <p>NAME</p>
                         <input id="contact-name" type="text" pattern="[A-Za-z]+" name="name" required>
                         <p>EMAIL</p>
@@ -97,7 +98,7 @@
                         <p>MESSAGE</p>
                         <textarea id="contact-message" class="tex-area" rows="10" cols="50" maxlength="300" spellcheck="true" wrap="soft"></textarea>
                         <div class="submit-button">
-                            <button id="submit-button" class="submit">SEND MESSAGE</button>
+                            <button id="submit-button" formmethod="get" form="contact" class="submit">SEND MESSAGE</button>
                         </div>
                     </form>
                 </div>
@@ -143,7 +144,5 @@
                 </div>
             </footer>   
         </div>
-        </div>
-        <script src="./js/script.js"></script>
     </body>
 </html>
