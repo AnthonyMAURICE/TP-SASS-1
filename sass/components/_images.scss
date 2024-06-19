@@ -6,20 +6,16 @@ header, #main-page{
 .images{
     margin-top: 85px;
     img{
-        max-width: 1152px;
         height: auto;
         width: 100%;
-        aspect-ratio: auto 1920 / 1238;
     }
 }
 
 .images-double{
-    margin-top: 0;
+    margin: 0;
     img{
-        aspect-ratio: auto 640 / 427;
         width: 100%;
         height: auto;
-        max-width: 575px;
     }
     
 }

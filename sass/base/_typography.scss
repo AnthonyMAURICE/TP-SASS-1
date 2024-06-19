@@ -50,12 +50,12 @@ ul{
 
 }
 .article{
-    background-color: white;
+    background-color: $color-primary;
     color: black;
 }
 
 .second-article, .info{
-    border: 1px solid, $color-tertiary-moded;
+    border: 1px solid $color-tertiary-moded;
 }
 
 p{
@@ -92,7 +92,7 @@ footer{
     }
     .button-submit{
         color: $color-tertiary;
-        border: 2px, solid $color-tertiary-moded;
+        border: 2px solid $color-tertiary-moded;
         margin: 5% 0;
     }
     .value{
@@ -113,7 +113,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
 
     .submit-button{
         text-align: center;

@@ -37,8 +37,8 @@ header{
         flex-flow: column;
         justify-content: center;
         align-items: center;
-        margin-top: 4%;
-        height: 1000px;
+        margin-top: 5%;
+        height: 975px;
         text-align: center;
         .slogan{
             width: 55%;
@@ -118,6 +118,7 @@ header{
         padding: 5%;
         .second-section-title{
             width: 55%;
+            min-height: 120px;
         }
         .publication-date{
             text-align: center;
@@ -151,20 +152,24 @@ footer{
             .input-elem{
                 height: 5rem;
             }
+            textarea{
+                resize: none;
+            }
         }
         .info{
             height: 25%;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             padding: 5%;
             p{
                 padding: 5% 0;
+                margin: 2%;
             } 
             .value{
-                width: 55%;
+                width: 70%;
                 .address{
-                    margin-top: 12%;
+                    margin-top: 10%;
                 }
             }
             a{

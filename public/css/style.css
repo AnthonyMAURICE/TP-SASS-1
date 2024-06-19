@@ -52,7 +52,7 @@ ul li:hover > a {
 }
 
 .second-article, .info {
-  border: 1px solid, rgba(105, 105, 105, 0.3);
+  border: 1px solid rgba(105, 105, 105, 0.3);
 }
 
 p {
@@ -89,7 +89,7 @@ footer label, footer .key {
 }
 footer .button-submit {
   color: rgb(105, 105, 105);
-  border: 2px, solid rgba(105, 105, 105, 0.3);
+  border: 2px solid rgba(105, 105, 105, 0.3);
   margin: 5% 0;
 }
 footer .value {
@@ -104,7 +104,7 @@ footer .value a {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .submit-button {
     text-align: center;
   }
@@ -135,6 +135,7 @@ button:hover {
 }
 
 .arrow {
+  cursor: pointer;
   position: relative;
   width: 60px;
   height: 60px;
@@ -171,20 +172,16 @@ header, #main-page {
   margin-top: 85px;
 }
 .images img {
-  max-width: 1152px;
   height: auto;
   width: 100%;
-  aspect-ratio: auto 1920/1238;
 }
 
 .images-double {
-  margin-top: 0;
+  margin: 0;
 }
 .images-double img {
-  aspect-ratio: auto 640/427;
   width: 100%;
   height: auto;
-  max-width: 575px;
 }
 
 @media screen and (max-width: 900px) {
@@ -242,8 +239,8 @@ header .slogan-container {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4%;
-  height: 1000px;
+  margin-top: 5%;
+  height: 975px;
   text-align: center;
 }
 header .slogan-container .slogan {
@@ -323,6 +320,7 @@ header nav .nav-links {
 }
 .double-articles .second-article .second-section-title {
   width: 55%;
+  min-height: 120px;
 }
 .double-articles .second-article .publication-date {
   text-align: center;
@@ -356,21 +354,25 @@ footer .formulaire form input, footer .formulaire form textarea {
 footer .formulaire form .input-elem {
   height: 5rem;
 }
+footer .formulaire form textarea {
+  resize: none;
+}
 footer .formulaire .info {
   height: 25%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 5%;
 }
 footer .formulaire .info p {
   padding: 5% 0;
+  margin: 2%;
 }
 footer .formulaire .info .value {
-  width: 55%;
+  width: 70%;
 }
 footer .formulaire .info .value .address {
-  margin-top: 12%;
+  margin-top: 10%;
 }
 footer .formulaire .info a {
   color: black;
