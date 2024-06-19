@@ -14,9 +14,17 @@ body{
     height: 100vh;
 }
 
+body, p, ul{
+    margin: 0;
+}
+
+.fa-brands{
+    width: 20px;
+}
+
 main, nav, article, footer{
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 header{
@@ -29,34 +37,49 @@ header{
         flex-flow: column;
         justify-content: center;
         align-items: center;
-        height: 1040px;
+        margin-top: 4%;
+        height: 1000px;
         text-align: center;
+        .slogan{
+            width: 55%;
+            margin: 3%;
+        }
+        .under-slogan{
+            font-style: italic;
+        }
     }
     nav{
         display: flex;
         justify-content: space-between;
-        
+        height: 2%;
         background-color: $color-secondary-moded;
         .nav-elements{
             display: flex;
             justify-content: flex-start;
+            align-items: center;
             width: 50%;
             padding: 0;
             li{
+                width: 33%;
                 padding: 15px 0;
             }
         }
         .nav-links{
             display: flex;
             align-items: center;
+            justify-content: space-evenly;
+            width: 20%;
         }
     }
 }
 
 /* main container */
 
+.article{
+    padding: 5%;
+}
+
 .main-article{
-    
     margin: auto;
     display: flex;
     flex-flow: column;
@@ -74,6 +97,10 @@ header{
         display: flex;
         flex-flow: column;
         align-items: center;
+        .section-title{
+            width: 60%;
+            margin-bottom: 50px;
+        }
         p{
             width: 65%;
             margin: auto;
@@ -89,6 +116,9 @@ header{
     padding: 0;
     .second-article{
         padding: 5%;
+        .second-section-title{
+            width: 55%;
+        }
         .publication-date{
             text-align: center;
         }
@@ -107,7 +137,6 @@ footer{
     display: flex;
     .formulaire{
         width: 50%;
-        height: 75vh;
         form{
             display: flex;
             flex-flow: column;
@@ -133,12 +162,87 @@ footer{
                 padding: 5% 0;
             } 
             .value{
-                width: 50%;
+                width: 55%;
+                .address{
+                    margin-top: 12%;
+                }
             }
             a{
                 color: black;
                 border: 1px solid $color-tertiary-moded;
                 border-radius: 25px;
+                margin: 2%;
+            }
+            a:hover{
+                color: white;
+                background-color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    header{
+        nav{
+            justify-content: flex-start;
+            .nav-elements{
+                width: 80%;
+            }
+            .nav-links{
+                width: 20%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header{
+        .slogan-container{
+            .slogan, .under-slogan{
+                width: 90%;
+            }
+        }
+        nav{
+            flex-flow: column;
+            .nav-elements{
+                width: 100%;
+                .second-li{
+                    padding: 15px;
+                }
+            }
+            .nav-links{
+                width: 100%;
+            }
+        }
+    }
+
+    .main-article{
+        .content{
+            .section-title{
+                width: 90%;
+            }
+        }
+    }
+
+    .double-articles{
+        flex-flow: column;
+        .second-article{
+            width: 100%;
+            margin: 0;
+            .second-section-title{
+                width: 90%;
+            }
+        }
+    }
+
+    footer{
+        flex-flow: column;
+        .formulaire{
+            width: 100%;
+            form{
+                input, textarea{
+                    width: 100%;
+                }
             }
         }
     }

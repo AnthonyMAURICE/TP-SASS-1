@@ -3,23 +3,17 @@ body {
   color: white;
 }
 
-body, p, ul {
-  margin: 0;
-}
-
 .fa-brands {
   text-align: center;
-  width: 20px;
 }
 
-h1 {
+h1, h2 {
   font-family: "Inter", sans-serif;
   font-weight: 800;
 }
 
-.slogan, .section-title {
+.section-title {
   font-size: 7rem;
-  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -28,14 +22,18 @@ h1 {
 }
 
 ul {
-  display: flex;
   list-style: none;
 }
-ul li a {
-  font-size: 1.6rem;
+ul li {
+  text-align: center;
 }
-ul li a:hover {
+ul li a {
+  font-size: 1.4rem;
+}
+ul li:hover {
   background-color: rgb(233, 233, 233);
+}
+ul li:hover > a {
   color: black;
 }
 
@@ -46,14 +44,11 @@ ul li a:hover {
 .second-section-title {
   font-size: 3rem;
   text-align: center;
-  margin-top: 5% px;
-  padding: 0 5%;
 }
 
 .article {
   background-color: white;
   color: black;
-  padding: 5%;
 }
 
 .second-article, .info {
@@ -61,12 +56,13 @@ ul li a:hover {
 }
 
 p {
+  font-size: 1.4rem;
   line-height: 2.5;
 }
 
 .under-slogan {
   font-family: "Merriweather", serif;
-  font-size: 25px;
+  font-size: 1.7rem;
 }
 
 form p {
@@ -77,7 +73,7 @@ form p {
 a {
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  padding: 15px;
+  padding: 15px 0;
   color: white;
   text-decoration: none;
 }
@@ -99,7 +95,34 @@ footer .button-submit {
 footer .value {
   color: rgba(105, 105, 105, 0.3);
 }
+footer .value a {
+  padding: 10px;
+}
 
+@media screen and (max-width: 1240px) {
+  ul li a {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .submit-button {
+    text-align: center;
+  }
+  .slogan, .section-title {
+    font-size: 3rem;
+  }
+  p, .under-slogan {
+    font-size: 1.2rem;
+  }
+  footer .value a {
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer .value a {
+    padding: 0;
+  }
+}
 button {
   margin: 70px 0;
   padding: 15px 35px;
@@ -164,6 +187,11 @@ header, #main-page {
   max-width: 575px;
 }
 
+@media screen and (max-width: 900px) {
+  .images-double img {
+    max-width: 100%;
+  }
+}
 @keyframes load-fade {
   0% {
     height: 2000px;
@@ -190,9 +218,17 @@ body {
   height: 100vh;
 }
 
+body, p, ul {
+  margin: 0;
+}
+
+.fa-brands {
+  width: 20px;
+}
+
 main, nav, article, footer {
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 header {
@@ -206,29 +242,46 @@ header .slogan-container {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 1040px;
+  margin-top: 4%;
+  height: 1000px;
   text-align: center;
+}
+header .slogan-container .slogan {
+  width: 55%;
+  margin: 3%;
+}
+header .slogan-container .under-slogan {
+  font-style: italic;
 }
 header nav {
   display: flex;
   justify-content: space-between;
+  height: 2%;
   background-color: rgba(233, 233, 233, 0.3);
 }
 header nav .nav-elements {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   width: 50%;
   padding: 0;
 }
 header nav .nav-elements li {
+  width: 33%;
   padding: 15px 0;
 }
 header nav .nav-links {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
 }
 
 /* main container */
+.article {
+  padding: 5%;
+}
+
 .main-article {
   margin: auto;
   display: flex;
@@ -249,6 +302,10 @@ header nav .nav-links {
   flex-flow: column;
   align-items: center;
 }
+.main-article .content .section-title {
+  width: 60%;
+  margin-bottom: 50px;
+}
 .main-article .content p {
   width: 65%;
   margin: auto;
@@ -263,6 +320,9 @@ header nav .nav-links {
 }
 .double-articles .second-article {
   padding: 5%;
+}
+.double-articles .second-article .second-section-title {
+  width: 55%;
 }
 .double-articles .second-article .publication-date {
   text-align: center;
@@ -280,7 +340,6 @@ footer {
 }
 footer .formulaire {
   width: 50%;
-  height: 75vh;
 }
 footer .formulaire form {
   display: flex;
@@ -308,12 +367,71 @@ footer .formulaire .info p {
   padding: 5% 0;
 }
 footer .formulaire .info .value {
-  width: 50%;
+  width: 55%;
+}
+footer .formulaire .info .value .address {
+  margin-top: 12%;
 }
 footer .formulaire .info a {
   color: black;
   border: 1px solid rgba(105, 105, 105, 0.3);
   border-radius: 25px;
+  margin: 2%;
+}
+footer .formulaire .info a:hover {
+  color: white;
+  background-color: black;
+}
+
+@media screen and (max-width: 1240px) {
+  header nav {
+    justify-content: flex-start;
+  }
+  header nav .nav-elements {
+    width: 80%;
+  }
+  header nav .nav-links {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 900px) {
+  header .slogan-container .slogan, header .slogan-container .under-slogan {
+    width: 90%;
+  }
+  header nav {
+    flex-flow: column;
+  }
+  header nav .nav-elements {
+    width: 100%;
+  }
+  header nav .nav-elements .second-li {
+    padding: 15px;
+  }
+  header nav .nav-links {
+    width: 100%;
+  }
+  .main-article .content .section-title {
+    width: 90%;
+  }
+  .double-articles {
+    flex-flow: column;
+  }
+  .double-articles .second-article {
+    width: 100%;
+    margin: 0;
+  }
+  .double-articles .second-article .second-section-title {
+    width: 90%;
+  }
+  footer {
+    flex-flow: column;
+  }
+  footer .formulaire {
+    width: 100%;
+  }
+  footer .formulaire form input, footer .formulaire form textarea {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,23 +3,17 @@ body{
     color: $color-primary;
 }
 
-body, p, ul{
-    margin: 0;
-}
-
 .fa-brands{
     text-align: center;
-    width: 20px;
 }
 
-h1{
+h1, h2{
     font-family: 'Inter', sans-serif;
     font-weight: 800;
 }
 
-.slogan, .section-title{
+.section-title{
     font-size: 7rem;
-    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -28,18 +22,18 @@ h1{
 }
 
 ul{
-    display: flex;
     list-style: none;
-    
     li{
+        text-align: center;
         a{
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
-        a:hover{
-            background-color: $color-secondary;
-            color: black;
-            
-        }
+    }
+    li:hover{
+        background-color: $color-secondary;
+    }
+    li:hover > a{
+        color: black;
     }
 }
 
@@ -52,14 +46,12 @@ ul{
 .second-section-title{
     font-size: 3rem;
     text-align: center;
-    margin-top: 5%px;
-    padding: 0 5%;
+
 
 }
 .article{
     background-color: white;
     color: black;
-    padding: 5%;
 }
 
 .second-article, .info{
@@ -67,13 +59,14 @@ ul{
 }
 
 p{
+    font-size: 1.4rem;
     line-height: 2.5;
 
 }
 
 .under-slogan{
     font-family: 'Merriweather', serif;
-    font-size: 25px;
+    font-size: 1.7rem;
 }
 
 form p{
@@ -84,7 +77,7 @@ form p{
 a{
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    padding: 15px;
+    padding: 15px 0;
     color: $color-primary;
     text-decoration: none;
 }
@@ -104,5 +97,51 @@ footer{
     }
     .value{
         color: $color-tertiary-moded;
+        a{
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    ul{
+        li{
+            a{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .submit-button{
+        text-align: center;
+    }
+
+    .slogan, .section-title{
+        font-size: 3rem;
+    }
+
+    p, .under-slogan{
+        font-size: 1.2rem;
+    }
+
+    footer{
+        .value{
+            a{
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer{
+        .value{
+            a{
+                padding: 0;
+            }
+        }
     }
 }
